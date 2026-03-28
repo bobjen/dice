@@ -8,7 +8,7 @@ of choices in sequence.  The program never needs to know it is being
 enumerated — it just makes choices and acts on them.
 
 Original C++ implementation by Bob Jenkins (public domain).
-Rust translation in `src/`.
+Rust translation by Claude in `src/`.
 
 Documentation: https://burtleburtle.net/bob/testing/dice.html
 
