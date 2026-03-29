@@ -25,8 +25,9 @@ results; those duplicates are skipped efficiently by the carry propagation.
 
 The included example searches for five 3s in a row on a six-sided die.
 It calls `choose(6)` five times per run; the framework drives it through
-all 6^5 = 7776 combinations and prints the ones where every roll is 3
-(there is exactly one such sequence).
+all combinations and prints the ones where every roll is 3
+(there is exactly one such sequence). It short-circuits as soon as it sees
+a non-3, so threes() gets called only 30 times not 6^5=7776 times.
 
 ```rust
 fn threes(d: &mut Dice) {
